@@ -4,17 +4,7 @@
     <string name="Button1">Sites of India</string>
     <string name="Button2">Convert Currency</string>
     <string name="sbB2">Convert USD to INR</string>
-    <string name="Button3">City Guide</string>
+    <string name="Button3">Country Guide</string>
     <string name="sbB3">Check on smart city guide</string>
-    <string name="IM"></string>
-    <string name="enterUSD"> Enter USD Amount</string>
-    <string name="MainButton">Convert Currency</string>
-    <string name="showINR"> Converted Amount</string>
-    <string name="convertedINR"> INR </string>
-
-
-
-
-
-
+    <string name="btmusic"> Play folk music </string>
 </resources>
