@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/app_name" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="276dp"
@@ -83,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/Button1" />
 
     <Button
         android:id="@+id/btmusic"
