@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         btmusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SitesofIndia.class));
+                startActivity(new Intent(MainActivity.this, FolkMusic.class));
             }
         });
 
