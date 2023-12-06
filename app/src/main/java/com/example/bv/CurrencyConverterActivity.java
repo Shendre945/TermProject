@@ -1,8 +1,10 @@
 package com.example.bv;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,5 +49,13 @@ public class CurrencyConverterActivity extends AppCompatActivity {
         } catch (NumberFormatException e) {
             resultTextView.setText("Invalid input. Please enter a valid number.");
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home)
+            onBackPressed();
+
+        return super.onOptionsItemSelected(item);
     }
 }
