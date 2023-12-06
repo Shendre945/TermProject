@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btmusic = findViewById(R.id.btmusic);
+        Button btmusic = findViewById(R.id.Button4);
         btmusic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
