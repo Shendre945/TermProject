@@ -28,6 +28,7 @@
     <string name="rbUSDToINR">Convert USD to INR</string>
     <string name="rbINRToUSD">Convert INR to USD</string>
     <string name="btConvert">Convert Amount</string>
+    <string name="ivcurrency"> INR USD Currency Cover </string>
 
     //Sites of India
     <string name="tvGoldenTemple"> Golden Temple </string>
