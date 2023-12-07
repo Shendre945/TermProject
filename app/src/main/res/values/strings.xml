@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Travel Smart to India</string>
-    <string name="sban">Vishal and Bayli in 2023</string>
+    <string name="sban">V I D B</string>
     <string name="Button1">Sites of India</string>
     <string name="Button2">Convert Currency</string>
     <string name="sbB2">Convert USD to INR</string>
@@ -10,8 +10,15 @@
     <string name="MainButton">Convert Currency</string>
     <string name="showINR"> Converted Amount</string>
     <string name="convertedINR"> INR </string>
+    <string name="tvresult"> Amount In INR </string>
     <string name="Button4"> Play folk music</string>
-
+    #Music
+    <string name="Pibare">Pibare Image</string>
+    <string name="Raga">Raga Image</string>
+    <string name="btPibare">PLAY PIBARE SONG</string>
+    <string name="btRaga">PLAY RAGA SONG</string>
+    <string name="btPibarePause">Pause Pibare Song</string>
+    <string name="btRagaPause">Pause Raga Song</string>
 
 
 

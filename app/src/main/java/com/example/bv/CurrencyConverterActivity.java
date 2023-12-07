@@ -22,9 +22,9 @@ public class CurrencyConverterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_currency_converter);
 
         usdEditText = findViewById(R.id.editTextUSD);
-        intEditText = findViewById(R.id.editTextINR);
+        intEditText = findViewById(R.id.tvINR);
         convertButton = findViewById(R.id.Button1);
-        resultTextView = findViewById(R.id.resultTextView);
+        resultTextView = findViewById(R.id.tvINR);
 
         convertButton.setOnClickListener(new View.OnClickListener() {
             @Override
