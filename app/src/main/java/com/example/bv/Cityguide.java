@@ -1,8 +1,10 @@
 package com.example.bv;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 public class Cityguide extends AppCompatActivity {
 
@@ -11,4 +13,13 @@ public class Cityguide extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cityguide);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home)
+            onBackPressed();
+
+        return super.onOptionsItemSelected(item);
+    }
+
 }

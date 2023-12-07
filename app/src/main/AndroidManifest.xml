@@ -17,9 +17,19 @@
             android:exported="false" />
         <activity
             android:name=".CurrencyConverterActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
             android:exported="false" />
         <activity
             android:name=".Cityguide"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
             android:exported="false" />
         <activity
             android:name=".SitesofIndia"
