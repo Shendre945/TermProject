@@ -36,7 +36,7 @@
         android:text="@string/sban"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#6A000000"
+        android:textColor="#673AB7"
         android:textSize="16sp"
         android:typeface="normal"
         app:layout_constraintBottom_toBottomOf="parent"
