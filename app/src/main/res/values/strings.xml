@@ -29,11 +29,12 @@
     <string name="rbINRToUSD">Convert INR to USD</string>
     <string name="btConvert">Convert Amount</string>
 
-    //cityguide
+    //Sites of India
     <string name="tvGoldenTemple"> Golden Temple </string>
     <string name="tvTajmahal"> Taj Mahal </string>
-    <string name="tvRajasthan"> Golden Temple </string>
+    <string name="tvRajasthan"> Rajasthan </string>
     <string name="tvTirupati"> Tirumala Tirupati </string>
+    <string name="ivSOIDescription"> Indian Places Image </string>
 
 
 
