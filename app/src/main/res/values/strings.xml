@@ -9,7 +9,6 @@
     <string name="enterUSD"> Enter USD Amount</string>
     <string name="MainButton">Convert Currency</string>
     <string name="showINR"> Converted Amount</string>
-    <string name="tvGoldenTemple"> Golden Temple </string>
     <string name="convertedINR"> INR </string>
     <string name="tvresult"> Amount In INR </string>
     <string name="Button4"> Play folk music</string>
@@ -21,8 +20,14 @@
     <string name="btPibarePause">Pause Pibare Song</string>
     <string name="btRagaPause">Pause Raga Song</string>
 
-    #SitesofIndia
+
+    #cityguide
+    <string name="tvGoldenTemple"> Golden Temple </string>
+    <string name="tvTajmahal"> Taj Mahal </string>
+    <string name="tvRajasthan"> Golden Temple </string>
     <string name="tvTirupati"> Tirumala Tirupati </string>
+
+
 
 
 

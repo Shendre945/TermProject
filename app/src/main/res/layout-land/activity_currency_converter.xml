@@ -35,8 +35,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="316dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/convertedINR"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="#73000000"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -46,15 +46,15 @@
         android:id="@+id/editTextUSD"
         android:layout_width="164dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="316dp"
+        android:layout_marginBottom="268dp"
         android:ems="10"
-        android:inputType="number"
         android:hint="@string/enterUSD"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColor="#6B000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -71,10 +71,9 @@
 
     <ImageView
         android:id="@+id/ivGoldenTemple"
-        android:layout_width="407dp"
-        android:layout_height="273dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/jovyn_chamb_iwmfiinivp4_unsplash" />
