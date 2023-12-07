@@ -1,10 +1,8 @@
 package com.example.bv;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -18,12 +16,12 @@ public class Cityguide extends AppCompatActivity {
         setContentView(R.layout.activity_cityguide);
 
         ImageView image1 = findViewById(R.id.imageView1);
-        ImageView image2 = findViewById(R.id.imageView2);
+        ImageView image2 = findViewById(R.id.ivGoldenTemple);
         ImageView image3 = findViewById(R.id.imageView3);
         ImageView image4 = findViewById(R.id.imageView4);
         Button button = findViewById(R.id.button);
 
-        final int[] currentImage = {3};
+        final int[] currentImage = {1};
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

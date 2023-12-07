@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/image1" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivGoldenTemple"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
