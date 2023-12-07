@@ -23,7 +23,7 @@ public class Cityguide extends AppCompatActivity {
         ImageView image4 = findViewById(R.id.imageView4);
         Button button = findViewById(R.id.button);
 
-        final int[] currentImage = {1};
+        final int[] currentImage = {3};
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
