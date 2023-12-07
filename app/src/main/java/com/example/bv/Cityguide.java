@@ -15,10 +15,10 @@ public class Cityguide extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cityguide);
 
-        ImageView image1 = findViewById(R.id.imageView1);
-        ImageView image2 = findViewById(R.id.ivGoldenTemple);
-        ImageView image3 = findViewById(R.id.imageView3);
-        ImageView image4 = findViewById(R.id.imageView4);
+        ImageView image1 = findViewById(R.id.ivCity1);
+        ImageView image2 = findViewById(R.id.ivCity2);
+        ImageView image3 = findViewById(R.id.ivCity3);
+        ImageView image4 = findViewById(R.id.ivCity4);
         Button button = findViewById(R.id.button);
 
         final int[] currentImage = {1};

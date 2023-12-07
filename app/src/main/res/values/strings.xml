@@ -12,6 +12,8 @@
     <string name="convertedINR"> INR </string>
     <string name="tvresult"> Amount In INR </string>
     <string name="Button4"> Play folk music</string>
+// City Guide
+    <string name="ivCGDescription"> City Architecuture </string>
 
     //Music
     <string name="Pibare">Pibare Image</string>
