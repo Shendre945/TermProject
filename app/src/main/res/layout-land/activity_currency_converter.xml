@@ -14,86 +14,90 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
-
-    <Button
-        android:id="@+id/Button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:shadowColor="#393939"
-        android:text="@string/MainButton"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#FFFFFF"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#000000"
-        app:cornerRadius="12sp"
-        app:icon="@android:drawable/ic_popup_sync"
-        app:iconPadding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/editTextUSD" />
-
-    <EditText
-        android:id="@+id/tvINR"
-        android:layout_width="164dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:ems="10"
-        android:hint="@string/convertedINR"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="#73000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextUSD"
-        android:layout_width="164dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="@string/enterUSD"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="#6B000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="17dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        android:background="#070707"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/tvINR"
-        app:srcCompat="@android:drawable/stat_notify_sync" />
-
-    <ImageView
-        android:id="@+id/ivTajmahal"
+        android:id="@+id/imageView8"
         android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:scaleType="centerCrop"
-        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/jovyn_chamb_iwmfiinivp4_unsplash" />
 
-    <TextView
-        android:id="@+id/resultTextView"
+    <EditText
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/hint"
+        android:inputType="numberDecimal"
+        android:textColorHint="#789090"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/tvresult"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/Button1" />
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount">
+
+        <RadioButton
+            android:id="@+id/rbUSDToINR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/rbUSDToINR"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbINRToUSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbINRToUSD"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:freezesText="true"
+        android:textColor="#FF0000"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/rgWeight" />
+
+    <Button
+        android:id="@+id/btConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/btConvert"
+        android:textSize="25sp"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

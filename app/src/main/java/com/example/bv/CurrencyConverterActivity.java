@@ -8,47 +8,55 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.text.DecimalFormat;
 
 public class CurrencyConverterActivity extends AppCompatActivity {
 
-    private EditText usdEditText, intEditText;
-    Button convertButton;
-    TextView resultTextView;
+    private double conversionRate = 83;
+    private double AmountEntered;
+    private double convertedAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_currency_converter);
 
-        usdEditText = findViewById(R.id.editTextUSD);
-        intEditText = findViewById(R.id.tvINR);
-        convertButton = findViewById(R.id.Button1);
-        resultTextView = findViewById(R.id.resultTextView);
+        final EditText weight = findViewById(R.id.tvAmount);
+        final RadioButton USDToINR = findViewById(R.id.rbUSDToINR);
+        final RadioButton INRToUSD = findViewById(R.id.rbINRToUSD);
+        final TextView result = findViewById(R.id.tvResult);
+        final Button convert = findViewById(R.id.btConvert);
 
-        convertButton.setOnClickListener(new View.OnClickListener() {
+        DecimalFormat tenth = new DecimalFormat("#.#");
+
+        convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                convertUSDToINR();
+                AmountEntered = Double.parseDouble(weight.getText().toString());
+                if (USDToINR.isChecked()) {
+                    // do the conversion
+                    convertedAmount = AmountEntered * conversionRate;
+                    result.setText(tenth.format(convertedAmount) + " Rupees");
+                }
+                else if (INRToUSD.isChecked()) {
+                    // do the conversion
+                    convertedAmount = AmountEntered / conversionRate;
+                    result.setText(tenth.format(convertedAmount) + " Dollars");
+                }
+                else {
+                    Toast.makeText(CurrencyConverterActivity.this,
+                                    "Please select Currency to Convert",
+                                    Toast.LENGTH_SHORT)
+                            .show();
+                }
+
+
             }
         });
-    }
-
-    private void convertUSDToINR() {
-        try {
-            // Get the amount in USD from the EditText
-            double usdAmount = Double.parseDouble(usdEditText.getText().toString());
-
-            // Assuming a fixed exchange rate for this example
-            double exchangeRate = 83; // Replace with actual exchange rate
-
-            // Perform the conversion
-            double inrAmount = usdAmount * exchangeRate;
-            // Display the result in the TextView
-            resultTextView.setText("Converted amount: " + inrAmount + "INR");
-        } catch (NumberFormatException e) {
-            resultTextView.setText("Invalid input. Please enter a valid number.");
-        }
     }
 
     @Override

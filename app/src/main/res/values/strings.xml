@@ -12,7 +12,8 @@
     <string name="convertedINR"> INR </string>
     <string name="tvresult"> Amount In INR </string>
     <string name="Button4"> Play folk music</string>
-    #Music
+
+    //Music
     <string name="Pibare">Pibare Image</string>
     <string name="Raga">Raga Image</string>
     <string name="btPibare">PLAY PIBARE SONG</string>
@@ -20,8 +21,13 @@
     <string name="btPibarePause">Pause Pibare Song</string>
     <string name="btRagaPause">Pause Raga Song</string>
 
+    //CurrencyConverter
+    <string name="hint">Enter Amount</string>
+    <string name="rbUSDToINR">Convert USD to INR</string>
+    <string name="rbINRToUSD">Convert INR to USD</string>
+    <string name="btConvert">Convert Amount</string>
 
-    #cityguide
+    //cityguide
     <string name="tvGoldenTemple"> Golden Temple </string>
     <string name="tvTajmahal"> Taj Mahal </string>
     <string name="tvRajasthan"> Golden Temple </string>
