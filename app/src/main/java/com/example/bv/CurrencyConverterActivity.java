@@ -24,7 +24,7 @@ public class CurrencyConverterActivity extends AppCompatActivity {
         usdEditText = findViewById(R.id.editTextUSD);
         intEditText = findViewById(R.id.tvINR);
         convertButton = findViewById(R.id.Button1);
-        resultTextView = findViewById(R.id.tvINR);
+        resultTextView = findViewById(R.id.resultTextView);
 
         convertButton.setOnClickListener(new View.OnClickListener() {
             @Override
