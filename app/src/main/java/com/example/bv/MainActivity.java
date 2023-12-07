@@ -36,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button button3 = findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Cityguide.class));
+            }
+        });
+
         Button btmusic = findViewById(R.id.Button4);
         btmusic.setOnClickListener(new View.OnClickListener() {
             @Override
