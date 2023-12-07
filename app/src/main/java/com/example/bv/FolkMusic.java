@@ -35,8 +35,8 @@ public class FolkMusic extends AppCompatActivity {
         buttonPibare.setOnClickListener(buttonListener);
         buttonRaga.setOnClickListener(buttonListener);
 
-        mpPibare = MediaPlayer.create(this, R.raw.pibare);
-        mpRaga = MediaPlayer.create(this, R.raw.raga);
+        mpPibare = MediaPlayer.create(this, R.raw.raga);
+        mpRaga = MediaPlayer.create(this, R.raw.pibare);
 
         buttons = new Button[]{buttonPibare, buttonRaga};
         mediaPlayers = new MediaPlayer[]{mpPibare, mpRaga};
