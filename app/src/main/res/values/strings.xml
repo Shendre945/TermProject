@@ -12,16 +12,17 @@
     <string name="convertedINR"> INR </string>
     <string name="tvresult"> Amount In INR </string>
     <string name="Button4"> Play folk music</string>
-// City Guide
+
+    //City Guide
     <string name="ivCGDescription"> City Architecuture </string>
 
     //Music
     <string name="Pibare">Pibare Image</string>
     <string name="Raga">Raga Image</string>
-    <string name="btPibare">PLAY PIBARE SONG</string>
-    <string name="btRaga">PLAY RAGA SONG</string>
-    <string name="btPibarePause">Pause Pibare Song</string>
-    <string name="btRagaPause">Pause Raga Song</string>
+    <string name="btPibare">PLAY PIBARE MUSIC</string>
+    <string name="btRaga">PLAY RAGA MUSIC</string>
+    <string name="btPibarePause">Pause Pibare Music</string>
+    <string name="btRagaPause">Pause Raga Music</string>
 
     //CurrencyConverter
     <string name="hint">Enter Amount</string>

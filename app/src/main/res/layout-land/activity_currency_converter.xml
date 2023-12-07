@@ -5,9 +5,20 @@
     android:id="@+id/currancy"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#45CEECFF"
     android:foregroundGravity="center"
     android:textAlignment="center"
     tools:context=".CurrencyConverterActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/ivcurrency"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/currency" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -20,71 +31,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/currency" />
-
-    <EditText
-        android:id="@+id/tvAmount"
+    <include
+        android:id="@+id/include3"
+        layout="@layout/cv_currency_converter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:ems="10"
-        android:gravity="center_horizontal"
-        android:hint="@string/hint"
-        android:inputType="numberDecimal"
-        android:textColorHint="#789090"
-        android:textSize="25sp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/rgWeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/tvAmount">
-
-        <RadioButton
-            android:id="@+id/rbUSDToINR"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/rbUSDToINR"
-            android:textSize="20sp" />
-
-        <RadioButton
-            android:id="@+id/rbINRToUSD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/rbINRToUSD"
-            android:textSize="20sp" />
-
-    </RadioGroup>
-
-
-    <TextView
-        android:id="@+id/tvResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:freezesText="true"
-        android:textColor="#FF0000"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/rgWeight" />
 
     <Button
         android:id="@+id/btConvert"
@@ -98,7 +56,7 @@
         app:icon="@android:drawable/ic_popup_sync"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/tvResult" />
+        app:layout_constraintTop_toBottomOf="@+id/include3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
