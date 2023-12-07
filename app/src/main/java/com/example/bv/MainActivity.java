@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btmusic = findViewById(R.id.Button4);
-        btmusic.setOnClickListener(new View.OnClickListener() {
+        Button button4 = findViewById(R.id.Button4);
+        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, FolkMusic.class));
